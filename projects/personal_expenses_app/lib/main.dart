@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Personal Expenses',
+      title: 'Ruth\'s Personal Expenses',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.pink,
           colorScheme: ColorScheme.fromSwatch()
-              .copyWith(primary: Colors.purple, secondary: Colors.amber),
+              .copyWith(primary: Color.fromARGB(255, 254, 128, 170), secondary: Colors.grey),
               errorColor: Colors.red,
           fontFamily: 'Quicksand',
           textTheme: ThemeData.light().textTheme.copyWith(
@@ -103,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Personal Expenses'),
+        title: Text('Ruth\'s Personal Expenses'),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.add),
